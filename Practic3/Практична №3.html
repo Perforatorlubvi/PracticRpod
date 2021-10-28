@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	       //Завдання
+       let arr = ['Hello', 'world','!'];
+			alert(arr[0]+", "+arr[1]+arr[2]);
+			
+			let text = [arr[0]+", "+arr[1]+arr[2]];
+			alert(text);
+			
+			arr[0] = 'Bay';
+			alert(arr[0]+", "+arr[1]+arr[2])
+			
+			let obj = {'Петя':100,'Коля':200}
+			alert(obj['Петя']+" "+ obj['Коля'])
+			
+			var color = {
+				'Ua':['блакитний','червоний','зелений'],
+				'En':['blue','red','green'],
+			};
+			alert(color['Ua'][0])
+
+
+
+
+
+	//Робота з масивами
+	let arr = ['a','b','c']
+		alert(arr)
+		
+		alert(arr[0])
+		alert(arr[1])
+		alert(arr[2])
+		
+		let arr2 = ['a','b','c', 'b']
+		alert(arr2[0]+" + "+arr2[1]+", "+arr2[2]+" + "+arr2[3])
+
+		let arr3 = [2, 5, 3, 9]
+		arr3[0]*arr3[1]
+		result = [arr3[0]*arr3[1], arr3[2]*arr3[3]]
+		alert(result)
+
+		let obj = {'a': 1, 'b': 2, 'c': 3};
+		alert(obj['c'])
+		alert(obj.c)
+
+        let obj = {'Коля':'тисячі', 'Вася':100, 'Петя':200};
+        alert(obj['Коля'] + " " +obj['Петя'])
+        
+        let obj = {1:'пн',2:'вт',3:'ср',4:'чт',5:'пт',6:'сб',7:'нд'}
+        alert(obj[4])
+        let day = obj[3]
+        alert(day)
+
+       let arr = {
+       	'1':[1,2,3],
+       	'2':[4,5,6],
+       	'3':[7,8,9],
+       }
+       alert(arr['2'][0])
+
+       let obj = {
+       'js':['jQuery', 'Angular'],
+       'php':['hello'],
+       'css':['world']
+       }
+       alert(obj['js'][0])
+
+       let obj = {
+       	'ru':['Понедельник','Вторник','Среда','Четверг','Пятница','Субота','Воскресенье'],
+       	'en':['Monday','Tuesday', 'Wednesday', 'Thusday', 'Friday', 'Saturday','Sunday']
+       }
+       alert(obj['ru'][0] + ' ' + obj['en'][2])
+       let lang = 'ru'
+       let day = 3
+       alert(obj[lang][day])
+</script>
+</body>
+</html>

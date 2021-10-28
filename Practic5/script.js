@@ -1,6 +1,6 @@
 
-// //#1
-// let i=1;
+// //#Practic1
+// let i=Practic1;
 // while (i<101){
 //     console.log(i+"\n");
 //     i++;
@@ -8,7 +8,7 @@
 
 
 
-//#2
+//#Practic2
 // let i=11;
 // while (i<34){
 //     console.log(i);
@@ -17,7 +17,7 @@
 
 
 
-//#3
+//#Practic3
 let i=1;
 while (i<101){
 
