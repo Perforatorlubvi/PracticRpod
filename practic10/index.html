@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+<div id="login">
+    <form action="javascript:void(0);">
+        <fieldset class="clearfix">
+            <p><span class="fontawesome-user"></span><input type="text"     class="inputField"  onBlur="if(this.value == '') "  placeholder="Name" ></p>
+            <p><span class="fontawesome-user"></span><input type="text"     class="inputField"  onBlur="if(this.value == '') "  placeholder="Organization" ></p>
+            <p><span class="fontawesome-user"></span><input type="text"     class="inputField"  onBlur="if(this.value == '') "  placeholder="Phone" id="phone"></p>
+            <p><span class="fontawesome-user"></span><input type="text"     class="inputField"  onBlur="if(this.value == '')"   placeholder="Email" id="email"></p>
+            <div class="buttons">
+                <p><input type="submit" value="Send" onclick="CheckData()"></p>
+                <p><input type="submit" value="Clear " id="#button_clear"></p>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
