@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<script>
+
+   alert('JS'.toLowerCase())
+   alert('js'.toUpperCase())
+
+
+   alert('я вчу javascript'.length)
+
+var arr = ['я' , 'вчу' ,'javascript']
+delete(arr[1])
+alert(arr)
+
+var str = 'I learn javascript';
+str = str.slice(0, 1) + str.slice(7);
+alert(str)
+
+var str = 'I learn javascript',
+    i = 3,
+    result = str.substr(0, i-1)+str.substring(i);
+alert(result);
+
+
+var arr = ['i','learn','javascript']
+var result = arr.indexOf('learn');
+   
+   var str = 'Every Vauxhall car built since 2004 have a hidden shark somewhere in the car. Found mine in the glove box.'
+    var n = 101, len = str.length;
+    if (n <= len) {
+        alert(str.substr(0, n) + '...\n\n\n...' + str.substr(n));
+    } else {
+        alert(str);
+    }
+
+    
+    alert('Я-вчу-javascript!'.replace(/-/g, '!'))
+    const str = 'I learn Javascript';
+    const re = str.split(" ");
+    alert(re)
+
+    const str = 'I learn Javascript';
+    const re = str.split(" ");
+    alert(re)
+
+    var str = '2025-12-31'
+    var arr = str.split("-")
+    alert(arr)
+    var str = '2025-12-31'
+    var arr = str.split("-")
+    var newStr = arr + "." + arr + "." + arr
+    alert(newStr)
+
+    var elements = ['i','learn','javascript','!']
+  alert(elements.join('+'));
+  var strVariable = "i learn javascript!";
+alert(strVariable.toUpperCase()); 
+</script>
