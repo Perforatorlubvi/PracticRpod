@@ -1,0 +1,32 @@
+.marking div{
+    display: flex;
+    flex-direction: row;
+}
+.marking{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.res{
+    width: 250px;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: darkgoldenrod;
+    margin-top: 50px;
+}
+.Names_groups{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#students{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 100px;
+}

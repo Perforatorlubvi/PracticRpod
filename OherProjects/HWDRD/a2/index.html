@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="add__">
+        <label for="tovar">
+            <input type="text" id="tovar" placeholder="Продукт"></label>
+        <label for="howMany"><input type="number" id="howMany" placeholder="Количество"></label>
+
+        <label for="howMany"><input type="number" id="one" placeholder="Цена за штуку"></label>
+        <button id="o" onclick="myFunc()">добавить</button>
+    </div>
+
+
+
+    <button id="show" onclick="myFunc1()">показать</button>
+
+
+
+    <div id="main" class="main">
+        <div class="header_text">
+            <img src="https://image.flaticon.com/icons/svg/580/580235.svg" alt="">
+            <h2>Чек</h2>
+
+        </div>
+        <div id="div_">
+
+        </div>
+        <hr>
+        <h3 id="price" class="price_"></h3>
+        <h3 id="av_price-of_1_thing" class="price_"></h3>
+        <div id="most_expensive_thing" class="price_">
+
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

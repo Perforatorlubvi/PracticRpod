@@ -1,0 +1,7 @@
+li{
+cursor: pointer;
+}
+
+.main li:hover{
+    font-weight: bold;
+}

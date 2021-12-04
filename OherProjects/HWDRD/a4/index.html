@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="add__">
+        <label for="tovar">
+            <input type="text" id="tovar" placeholder="Название  аудитории"></label>
+        <label for="howMany"><input type="number" id="howMany" placeholder="Количество мест"></label>
+
+        <label for="one"><input type="text" id="one" placeholder="названия факультета"></label>
+        <button id="o" onclick="myFunc()">добавить</button>
+    </div>
+
+
+    <div class="buttons_">
+
+        <button id="show" onclick="myFunc1()">Показать(без сортировки)</button>
+        <button id="show" onclick="myFunc2()">Показать(сортировка по количеству посадочных мест)</button>
+        <button id="show" onclick="myFunc3()">Показать(сортировка по афлфвиту)</button>
+
+    </div>
+    <div id="main" class="main">
+        <div class="header_text">
+            <h2>Список групп</h2>
+            <img src="https://image.flaticon.com/icons/svg/2235/2235452.svg" alt="">
+        </div>
+        <div id="div_">
+
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

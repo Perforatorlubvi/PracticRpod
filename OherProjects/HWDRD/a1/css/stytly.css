@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(46,40,143,1) 0%, rgba(73,65,207,1) 39%, rgba(0,212,255,1) 100%);
+}
+#show{
+    margin-top: 40px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+#show:hover{
+    background-color: white;
+    color: black;
+}
+
+.add__{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30px;
+    background-color: rgba(0, 0, 205, .5);
+    width: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid skyblue;
+    transition: .3s;
+    cursor: pointer;
+    color: white;
+}
+
+.add__:hover{
+    padding: 35px;
+}
+
+.add__ button{
+    margin-top: 5px;
+    background-color:rgba(0, 0, 205, 0);
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: .6s;
+    color: white;
+    border-radius: 10px;
+}
+
+.add__ button:hover{
+    background-color:wheat;
+    color: black;
+}
+
+.main{
+    background: rgba(0, 0, 205, .5);
+    width: 400px;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 3px solid seashell;
+}
+
+.main h2{
+    margin-top: -10px;
+    font-family: 'Rowdies', cursive;
+    font-size: 30px;
+    color: seashell;
+    border-bottom: 3px solid seashell;
+}
+
+.header_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header_text img{
+    width: 60px;
+    margin-top: -26px;
+}
+
+.main p{
+    border-bottom: 3px solid seashell;
+    font-family: 'Rowdies', cursive;
+    color: seashell;
+}

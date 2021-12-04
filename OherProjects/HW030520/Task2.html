@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Css2.css">
+</head>
+<body>
+<h3>Inputs</h3>
+<div style="display: flex;flex-direction:row;" >
+    <input name="Enter some text"  type="text"  placeholder="Enter some text">
+<!--    <input class="valid" name="Enter some text"  type="text"  value="Valid text">-->
+    <div>
+    <form class="form">
+        <input  style="border: none;color:#178d24" name="q" value="        Valid text">
+        <input type="image" src="icons/valid.png">
+    </form>
+    </div>
+    <div>
+        <form class="invalid">
+            <input  style="border: none;color:red" name="q" value="        Invalid text">
+            <input type="image" src="icons/invalid.png">
+        </form>
+    </div>
+    </div>
+    <div>
+        <h3>Check boxes</h3>
+        <div style="display: flex;flex-direction: row;" >
+       <div>
+           <input type="checkbox" id="payt1"/><label for="payt1"></label>   Subscribe
+        </div>
+        <div style="padding-left:100px">
+            <input type="checkbox" id="payt2"/><label for="payt2"></label>    Subscribe
+        </div>
+        </div>
+    </div>
+</div>
+<div>
+    <h3>Radio buttons</h3>
+    <div style="display: flex;flex-direction: row;" >
+        <div>
+            <b>Gender:</b>
+            <label><input  name="Radio" type="radio">Male</label>
+            <label><input   name="Radio" type="radio">Female</label>
+    </div>
+</div>
+    <div>
+        <h3>Buttons</h3>
+        <div style="display: flex;flex-direction: row;" >
+            <div>
+                <input  name="Buttons" type="button"  class="mybtn" value="Active">
+                <input   name="Radio" type="button"    class="mybtn" value="Hover">
+                <input   name="Radio" type="button"    class="mybtn1"value="Danger">
+                <input   name="Radio" type="button"  class="mybtn2" value="Hover">
+                <input   name="Radio" type="button"  class="mybtn3" value="Disabled">
+                <input type="image" name="image" src="icons/+-.png " width="100">
+            </div>
+    </div>
+        <div>
+            <h3>Text area</h3>
+            <div>
+                <div>
+                    <input type="text" style="width: 50%;height: 100px" placeholder="Enter some text">
+                </div>
+            </div>
+</div>
+</div>
+</div>
+</body>
+</html>

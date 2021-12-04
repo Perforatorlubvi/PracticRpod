@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.block{
+  opacity: 0;
+}
+#Books, #visitors, #cards,#Statistics{
+    display: none;
+}
+.modulAdd_0,.modulDel_0,.modulRem_0{
+ display: none!important;
+}
+.active{
+    display: inline-block!important;
+}
+#inputVisitorsDiv{
+    width: 100%;
+    border: 1px solid ;
+}
+.nav li{
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+margin-left: 100px;
+}
+body{
+    background-color: #D3D3D3;
+}
+.nav{
+    background-color: #1d2124;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+.section2{
+    display: flex;
+}
+.section2 div{
+    margin-left: 30px;
+}
+hr{
+    background-color :red;
+}
+p{
+    font-size: 30px;
+    padding: 20px;
+}

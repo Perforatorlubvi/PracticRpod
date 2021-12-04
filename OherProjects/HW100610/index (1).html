@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <title>Document</title>
+  <script src=""></script>
+  <style>
+  body{
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+  .main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  .left{
+    transition: .7s;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  .left_top{
+    width: 100%;
+    height: 50%;
+    background-color: #cccccc;
+  }
+  .left_bottom{
+    width: 100%;
+    height: 50%;
+      background-color: red;
+  }
+  .right{
+    transition: .7s;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .right_top{
+    width: 100%;
+    height: 50%;
+      background-color: red;
+  }
+  .right_bottom{
+    width: 100%;
+      background-color: #cccccc;
+    height: 50%;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="left">
+      <div class="left_top">
+
+        </div>
+        <div class="left_bottom">
+<img src="https://image.flaticon.com/icons/svg/126/126490.svg" style="width: 30px;height: 30px;display: block" id='picture'>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right_top">
+          </div>
+          <div class="right_bottom">
+
+          </div>
+        </div>
+    </div>
+
+
+
+      <script type="text/javascript" >
+        let flag = true;
+        document.querySelector('.left ').addEventListener('click',()=>{
+      if(flag){
+        $("img").attr("src","https://image.flaticon.com/icons/svg/860/860828.svg")
+        flag = !flag;
+          document.querySelector('.left').style.width= "2%";
+          document.querySelector('.right').style.width= "98%";
+        }
+        else{
+        $("img").attr("src","https://image.flaticon.com/icons/png/512/860/860790.png" )
+            flag = !flag;
+          document.querySelector('.left').style.width= "50%";
+          document.querySelector('.right').style.width= "98%";
+        }
+        })
+
+        var downed,el;
+        var y,delta_y = 0;
+
+        function clearY(obj_event) {
+          downed=false;
+        }
+        function saveY(obj_event) {
+          downed=true;
+          if (obj_event) {
+            y = obj_event.pageY;
+          }
+          else {
+            y = window.event.clientY;
+            if (ie) {
+              y -= 2;
+            }
+          }
+          obj_event = obj_event || window.event;
+          el = (obj_event.target || obj_event.srcElement);
+          delta_y = el.offsetTop;
+        }
+        function moveBlock(obj_event) {
+          if (downed==true) {
+            if (obj_event) {
+              y = obj_event.pageY;
+            }
+            else {
+              y = window.event.clientY;
+              if (ie) {
+                y -= 2;
+              }
+            }
+            var new_y = delta_y + y;
+            el.style.height = new_y + "px";
+          }
+        }
+
+        //window.onload = function(e){
+        var divs = document.getElementsByTagName('div');
+        for (var i=0; i<divs.length; i++) {
+          divs[i].onmousedown = saveY;
+        }
+        //}
+        document.onmouseup = clearY;
+        document.onmousemove = moveBlock;
+
+
+
+
+      </script>
+</body>
+</html>

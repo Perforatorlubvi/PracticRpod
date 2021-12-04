@@ -1,0 +1,13 @@
+.content{
+    text-align: center;
+    padding: 30px;
+}
+#allcol{
+    display: flex;
+    flex-wrap: wrap;
+}
+.div{
+    background-color:white;
+    opacity: 80%;
+    padding: 10px;
+}

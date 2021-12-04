@@ -1,0 +1,46 @@
+.mybtn{
+
+    padding: 10px 10px;
+    color: #f0f0f0;
+
+    background:#818181;
+
+}
+.mybtn:not(:hover){
+    color: #f0f0f0;
+}
+.mybtn:hover {
+    color: #5d5d5d;
+    background: #333;
+
+}
+.mybtn:active{
+    color: #f0f0f0;
+}
+li{
+    padding: 10px;
+    font-size: 30px;
+}
+ol{
+    list-style:  none;
+}
+#id1 {
+    list-style:'\1F589';
+}
+#id2
+{
+    list-style:'\1F497';
+}
+
+body{
+    background-color: #818181;
+}
+#id3{
+    list-style: '\1F550';
+}
+#id4{
+    list-style:'\1F6E1';
+}
+#id5{
+    list-style: "\2699";
+}

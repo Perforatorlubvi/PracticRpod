@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="parametrrs">
+            <label for="bold"><input type="checkbox" id="bold" name="bold">Bold</label>
+            <label for="line"><input type="checkbox" id="line" name="line">Underline</label>
+            <label for="italic"><input type="checkbox" id="italic" name="italic">Italic</label>
+            <input type="radio" name="position" id="left" value="Left" checked />Left
+            <input type="radio" name="position" id="right" value="Right" />Right
+            <input type="radio" name="position" id="center" value="Justify" />Center
+        </div>
+        <textarea name="" id="text_area" cols="60" rows="10" class="none"></textarea>
+    </div>
+    <button id="button" onclick="ckcik_button()">Creat</button>
+    <div id="text" class="">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stytly.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="add__">
+        <label for="tovar">
+            <input type="text" id="tovar" placeholder="Продукт"></label>
+        <label for="howMany"><input type="number" id="howMany" placeholder="Количество"></label>
+
+        <label for="one">продукт куплен<input type="checkbox" id="one" onchange="fun1()"
+                placeholder="продукт куплен"></label>
+        <button id="o" onclick="myFunc()">добавить</button>
+    </div>
+
+
+
+    <button id="show" onclick="myFunc1()">показать</button>
+
+
+
+    <div id="main" class="main">
+        <div class="header_text">
+            <h2>Список покупок</h2>
+            <img src="https://image.flaticon.com/icons/svg/716/716832.svg" alt="">
+        </div>
+        <div id="div_">
+
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

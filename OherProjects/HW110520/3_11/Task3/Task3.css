@@ -1,0 +1,17 @@
+#field {
+    width: 1000px;
+    height: 600px;
+    background-size: 100%;
+    background-image: url("https://i.pinimg.com/originals/0d/0e/6c/0d0e6ca6ae0eaa4bb3226a2cb4ef7a19.jpg");
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#ball {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+}

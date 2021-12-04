@@ -1,0 +1,32 @@
+input{
+    border: none;
+}
+ul{
+    list-style: none;
+}
+#id1{
+    list-style: url("icons/username.png");
+}
+input{
+    height: 20px;
+}
+#id2{
+    list-style: url("icons/email.png");
+}
+#id3{
+    list-style: url("icons/pswd.png");
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.Dv2{
+    display: flex;
+    padding-top: 5%;
+    padding-right: 10%;
+}
+.Dv2 input{
+
+    width: 300px;
+}

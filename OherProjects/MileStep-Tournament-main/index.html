@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<title>Document</title>
+</head>
+<body>
+	<div id="month-calendar">
+    <!-- Блок с заголовками (наименования месяца и года) и навигацией (на месяц вперед и назад) -->
+    <ul class="month">
+        <li class="prev" >&lt;</i></li>
+        <li class="next">&gt;	</li>
+        <li class="month-name"></li>
+        <li class="year-name"></li>
+    </ul>
+     <!-- Блок с наименования дней недели, начинается с понедельника (Пн) -->
+    <ul class="weekdays">
+        <li>Пн</li>
+        <li>Вт</li>
+        <li>Ср</li>
+        <li>Чт</li>
+        <li>Пт</li>
+        <li>Сб</li>
+        <li>Вс</li>
+    </ul>
+    <!-- табличная часть, дни месяца -->
+    <ul id="days">
+    </ul>
+		<div id="overlay">
+			<div class="popup">
+				<button class="close" title="Закрыть окно" onclick="swa2()"></button>
+				<input placeholder="Введите событие или задание" id="taskName" class="imp">
+				<input placeholder="Введите текст события" class="task imp"id="task"><br>
+				<span id="modalSpan" style="font-size: 2;"></span>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" onclick="swa2()">Закрыть</button>
+					<button type="button" class="btn btn-primary "onclick="Savedata()" >Сохранить</button>
+				</div>	
+			</div>
+		</div>
+	<script src="script.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>

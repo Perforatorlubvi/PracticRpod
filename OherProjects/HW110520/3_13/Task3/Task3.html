@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<h1>Прокрути меня</h1>
+
+<script>
+   let mass={
+news1:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis necessitatibus quam rem soluta. Assumenda, eius, molestiae. Aliquam asperiores consectetur debitis ea eaque eligendi optio qui. Doloremque fuga nostrum sit tenetur?',
+       news2:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis necessitatibus quam rem soluta. Assumenda, eius, molestiaecvl;kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+   }
+    function populate() {
+        while(true) {
+            let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+            if (windowRelativeBottom > document.documentElement.clientHeight + 100) break;
+            document.body.insertAdjacentHTML("beforeend", `<p>${mass.news1}</p>`);
+        }
+    }
+
+    window.addEventListener('scroll', populate);
+
+    populate();
+</script>
+
+</body>
+</html>

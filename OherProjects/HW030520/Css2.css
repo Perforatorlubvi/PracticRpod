@@ -1,0 +1,118 @@
+
+input[type="image"] {
+    width: 1.5em;
+}
+.form{
+    border: chartreuse 2px solid;
+}
+.invalid{
+    border: red 2px solid;
+}
+#payt1 {display: none;}
+[for="payt1"] {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    border-radius: 3px;
+    background: #9fcdcd;
+    box-shadow: #178d24;
+    cursor: pointer;
+}
+[for="payt1"]:before {
+    content: "";
+    position: absolute;
+    left: -8px; top: -3px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #178d24 ;
+    transition: .5s;
+}
+#payt1:checked ~ [for="payt1"]:before {
+    left: 32px;
+}
+#payt2 {display: none;}
+[for="payt2"] {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    border-radius: 3px;
+    background: #9fcdcd;
+    box-shadow: #178d24;
+    cursor: pointer;
+}
+[for="payt2"]:before {
+    content: "";
+    position: absolute;
+    left: -8px; top: -3px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: red ;
+    transition: .5s;
+}
+#payt2:checked ~ [for="payt2"]:before {
+    left: 32px;
+}
+.mybtn{
+
+    padding: 10px 10px;
+    color: #f0f0f0;
+
+    background:#178d24;
+
+}
+.mybtn:not(:hover){
+    color: #f0f0f0;
+}
+.mybtn:hover {
+    color: #f0f0f0;
+    background: red;
+
+}
+.mybtn1{
+
+    padding: 10px 10px;
+    color: #f0f0f0;
+
+    background:#178d24;
+
+}
+.mybtn1:not(:hover){
+    color: #f0f0f0;
+}
+.mybtn1:hover {
+    color: #f0f0f0;
+    background: pink;
+}
+.mybtn1:active{
+    color: #178d24;
+}
+.mybtn2{
+
+    padding: 10px 10px;
+    color: #f0f0f0;
+
+    background:#178d24;
+
+}
+.mybtn2:not(:hover){
+    color: #f0f0f0;
+}
+.mybtn2:hover {
+    color: #f0f0f0;
+    background: #8d131b;
+}
+.mybtn2:active{
+    color: #178d24;
+}
+.mybtn3{
+
+    padding: 10px 10px;
+    color: #f0f0f0;
+
+    background:grey;
+
+}
