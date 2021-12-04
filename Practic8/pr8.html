@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<script>
+    let arr = [1,2,3]
+    alert (arr.concat([4,5,6]))
+    
+    let arr1= [1,2,3]
+    arr1.reverse();
+    alert(arr1)
+
+    let arr2 = [1,2,3]
+    arr2.unshift(4,5,6)
+    alert(arr2)
+
+    let arr3 = [1,2,3]
+    arr3.push(4,5,6)
+    alert(arr3)
+
+    var Js = ['js','css','jq']
+    var shifted = Js.shift()
+    var shifted = Js.shift()
+    alert(Js)
+
+    var Js2 = ['js','css','jq']
+    var poped = Js.pop()
+    var poped = Js.pop()
+    alert(Js2)
+
+    var num = [1,2,3,4,5]
+    alert(num.slice(0,3))
+    const num1 = [1,2,3,4,5]
+    alert(num1.slice(3,4))
+    
+    var num2 = [1,2,3,4,5]
+    var removed = num2.splice(3) 
+    alert(num2.shift() + ',' +  removed)
+
+    function compareNumeric (a,b) {
+        if(a>b) return 1
+        if(a==b) return 0
+        if(a<b) return -1
+    }
+    let nmbr = [3,4,1,2,7]
+    nmbr.sort(compareNumeric)
+    alert(nmbr)
+
+    var an_obj = {js: 'test', jq: 'hello', css: 'world'}
+    alert(Object.keys(an_obj))
+
+</script>
