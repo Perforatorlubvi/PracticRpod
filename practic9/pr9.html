@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function f1(x) {
+            alert(Math.pow(x, 3))
+        }
+
+        function f2(x) {
+            alert(Math.pow(x, 3))
+        }
+
+        function f3(x, y) {
+            alert(x + y);
+        }
+
+        function f4(x, y, z) {
+            alert((x - y) / z)
+        }
+
+        function f5(x) {
+            str = ["Понедельник", "Вторник", "Середа", "Четверг", "Пятница", "Суботта", "Воскресенье"]
+            for (let i = 0; i < str.length; i++) {
+                if (x === i + 1) {
+                    alert(str[i]);
+                }
+            }
+        }
+
+        let choice = Number(prompt("Введiть номер завдання"))
+        switch (choice) {
+            case 1:
+                let num = Number(prompt("Введiть число"));
+                f1(num);
+                break;
+            case 2:
+                let num1 = Number(prompt("Введiть число"));
+                f2(num1);
+                break;
+            case 3:
+                let dig1 = Number(prompt("Введiть  перше число"));
+                let dig2 = Number(prompt("Введiть  друге число"));
+                f3(dig1, dig2);
+                break;
+            case 4:
+                let digit1 = Number(prompt("Введiть  перше число"));
+                let digit2 = Number(prompt("Введiть  друге число"));
+                let digit3 = Number(prompt("Введiть  останне число"));
+                f4(digit1, digit2, digit3);
+                break;
+            case 5:
+                let num4 = Number(prompt("Введiть номер тижня"));
+                f5(num4);
+                break;
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
