@@ -1,3 +1,6 @@
+
+let digarr=['1','2','3','4','5','6','7','8','9','0'];
+
 function CheckData() {
     let a = confirm("Are you sure you want to send the entered data?")
     if (a) CheckForm()
@@ -27,13 +30,35 @@ function checkNumber(phoneNumber) {
 function CheckValidFields() {
 
     let pattn = new RegExp("^[\.\-_A-Za-z0-9]+?@[\.\-A-Za-z0-9]+?\.[A-Za-z0-9]{2,6}$");
-    if (pattn.test(document.getElementById("email").value)) {
-        if (checkNumber(document.getElementById("phone").value)) {
-            return true;
+    if(CheckName()) {
+        if(CheckOrg()) {
+            if (pattn.test(document.getElementById("email").value)) {
+                if (checkNumber(document.getElementById("phone").value)) {
+                    return true
+                }
+            }
         }
     }
 }
-
+function CheckName(){
+    if(document.getElementById("name").value.length>0 && document.getElementById("name").value.length<30){
+        for(let i=0;i<document.getElementById("name").value.split('').length;i++){
+            for(let j=0;j<digarr.length;j++){
+                if(document.getElementById("name").value.split('')[i]==digarr[j]){
+                    return false
+                }
+            }
+        }
+        return true
+    }else
+        return false
+}
+function CheckOrg(){
+    if(document.getElementById("org").value.length>2 && document.getElementById("org").value.length<120){
+        return true
+    }else
+        return false
+}
 
 function CheckForm() {
     if (checkFillFields()) {
